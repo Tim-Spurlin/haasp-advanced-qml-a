@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="/HAASP/">
+    <file alias="ui/main.qml">/app/ui/main.qml</file>
+    <file alias="ui/qml.qrc">/app/ui/qml.qrc</file>
+  </qresource>
+</RCC>

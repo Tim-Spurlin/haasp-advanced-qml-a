@@ -1,0 +1,5 @@
+<RCC>
+  <qresource prefix="/HAASP">
+    <file alias="qmldir">/app/build/qmldir</file>
+  </qresource>
+</RCC>

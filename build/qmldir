@@ -1,0 +1,6 @@
+module HAASP
+linktarget HAASPplugin
+optional plugin HAASPplugin
+classname HAASPPlugin
+typeinfo HAASP.qmltypes
+prefer :/HAASP/

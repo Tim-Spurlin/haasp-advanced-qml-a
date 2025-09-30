@@ -1,0 +1,22 @@
+# Core web framework
+fastapi
+uvicorn
+
+# Vector search and embeddings
+sentence-transformers
+faiss-cpu # Use faiss-gpu if a CUDA-enabled GPU is available
+
+# Asynchronous task queue
+celery
+
+# File system monitoring
+inotify
+
+# Graph memory
+networkx
+
+# Database and utilities
+psycopg2-binary # PostgreSQL driver
+pybind11 # For C++/Python interop
+# rocksdb has been removed due to persistent build failures. SQLite will be used for graph persistence.
+pyyaml # For configuration files
