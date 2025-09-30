@@ -10,7 +10,7 @@ faiss-cpu # Use faiss-gpu if a CUDA-enabled GPU is available
 celery
 
 # File system monitoring
-inotify
+watchdog
 
 # Graph memory
 networkx
