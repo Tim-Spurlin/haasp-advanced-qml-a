@@ -1,0 +1,168 @@
+name: 🚨 Security Vulnerability Report
+description: Report a security vulnerability to help us protect our organization
+title: "[SECURITY] "
+labels: ["security", "vulnerability", "urgent"]
+assignees:
+  - security-team
+body:
+  - type: markdown
+    attributes:
+      value: |
+        # 🚨 Security Vulnerability Report
+
+        **⚠️ IMPORTANT SECURITY NOTICE ⚠️**
+
+        If this is a **critical security vulnerability** that could be exploited, please **DO NOT** create a public issue. Instead, contact our security team immediately:
+
+        - **Email:** security@SaphyreSolutions.com
+        - **Emergency Contact:** Tim.Spurlin@SaphyreSolutions.com
+
+        For non-critical security issues or suggestions, please continue with this form.[^1]
+  - type: dropdown
+    id: vulnerability-type
+    attributes:
+      label: 🔍 Vulnerability Type
+      description: What type of security issue is this?
+      options:
+        - Authentication bypass
+        - Authorization vulnerability
+        - Code injection (SQL, XSS, etc.)
+        - Insecure data storage
+        - Insecure communication
+        - Cryptographic vulnerability
+        - Dependency vulnerability
+        - Configuration issue
+        - Information disclosure
+        - Denial of Service (DoS)
+        - AI/ML Security
+        - API Security
+        - Other
+    validations:
+      required: true
+  - type: dropdown
+    id: severity
+    attributes:
+      label: ⚡ Severity Level
+      description: How severe is this vulnerability?
+      options:
+        - Critical (Immediate threat, full system compromise possible)
+        - High (Significant threat, sensitive data at risk)
+        - Medium (Moderate threat, limited impact)
+        - Low (Minor threat, minimal impact)
+        - Info (Informational, no immediate threat)
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: 📋 Vulnerability Description
+      description: Provide a clear and detailed description of the security vulnerability, including where it's located and how it was discovered.
+      placeholder: Describe the vulnerability, its potential impact, and how it could be exploited...
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction-steps
+    attributes:
+      label: 🔄 Steps to Reproduce
+      description: Provide step-by-step instructions to reproduce the vulnerability, including prerequisites.
+      placeholder: |
+        Prerequisites: ...
+        1. Go to...
+        2. Click on...
+        3. Enter...
+        4. See vulnerability...
+    validations:
+      required: true
+  - type: textarea
+    id: impact
+    attributes:
+      label: 💥 Potential Impact
+      description: What could an attacker accomplish with this vulnerability? Include affected data or systems.
+      placeholder: Describe the potential damage, data exposure, system compromise, etc...
+    validations:
+      required: true
+  - type: textarea
+    id: affected-systems
+    attributes:
+      label: 🎯 Affected Systems/Components
+      description: Which systems, repositories, or components are affected?
+      placeholder: List all affected repositories, systems, dependencies, branches, commit hashes, etc...
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: 📊 Evidence
+      description: Provide screenshots, logs, code snippets, or proof of concept (remove sensitive data).
+      placeholder: |
+        Screenshots or logs: ...
+        Code snippets:
+        ```
+        // Include relevant code
+        ```
+        Proof of Concept: ...
+      render: shell
+  - type: textarea
+    id: environment
+    attributes:
+      label: 🌐 Environment Information
+      description: Details about the affected environment.
+      placeholder: |
+        - Repository:
+        - Branch:
+        - Commit Hash:
+        - Operating System:
+        - Browser (if applicable):
+        - Additional tools:
+  - type: textarea
+    id: suggested-fix
+    attributes:
+      label: 🛠️ Suggested Fix
+      description: If you have suggestions for fixing this vulnerability, including temporary workarounds or alternatives, please share them.
+      placeholder: Describe potential fixes, patches, or mitigations...
+  - type: textarea
+    id: additional-info
+    attributes:
+      label: ℹ️ Additional Information
+      description: Any additional context or relevant information.
+      placeholder: Provide any additional context that might help understand the vulnerability...
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: ✅ Security Checklist
+      description: Please confirm the following
+      options:
+        - label: I have verified this is a legitimate security concern
+          required: true
+        - label: I have not disclosed this vulnerability publicly
+          required: true
+        - label: I have checked if this issue already exists
+          required: true
+        - label: I understand this will be reviewed by the security team
+          required: true
+        - label: I agree to follow responsible disclosure practices
+          required: true
+        - label: I have removed any sensitive information from this report
+          required: true
+  - type: markdown
+    attributes:
+      value: |
+        ---
+
+        ## 🔒 Next Steps
+
+        1. **Security Team Review:** Our security team will review this report within 24 hours
+        2. **Investigation:** We'll investigate and assess the vulnerability
+        3. **Fix Development:** Security patches will be developed and tested
+        4. **Disclosure:** We'll coordinate responsible disclosure if appropriate
+        5. **Recognition:** We appreciate security researchers and may provide recognition
+
+        ## 📞 Emergency Contact
+
+        For critical vulnerabilities requiring immediate attention:
+        - **Email:** security@SaphyreSolutions.com
+        - **Primary Contact:** Tim.Spurlin@SaphyreSolutions.com
+
+        Thank you for helping keep Saphyre Solutions LLC secure! 🛡️
+
+        [^1]: We follow responsible disclosure practices. Reports may be made public after resolution.
